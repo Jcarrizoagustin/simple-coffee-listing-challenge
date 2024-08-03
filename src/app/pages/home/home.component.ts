@@ -1,23 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { GetProductsService } from '../../services/get-products.service';
-import { Coffee } from '../../model/coffee.interface';
-import { CoffeCardComponent } from '../../components/coffe-card/coffe-card.component';
+import { Component } from '@angular/core';
+import { CoffeeContainerComponent } from '../../components/coffee-container/coffee-container.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CoffeCardComponent],
+  imports: [CoffeeContainerComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnInit{
-  coffeeList: Coffee[] = []
+export class HomeComponent {
+  
+  constructor(){}
 
-  constructor(private getProducts: GetProductsService){}
-
-  ngOnInit():void {
-    this.getProducts.getProducts().subscribe(
-      (data:Coffee[]) => this.coffeeList = data
-    )
-  }
+  
 }
