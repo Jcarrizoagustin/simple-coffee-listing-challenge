@@ -1,0 +1,78 @@
+.card {
+    width: 300px;
+    height: 270px;
+
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-image > img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-popular-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    padding: 5px 15px;
+
+    background-color: #F6C768;
+    color: #1B1D1F;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-data-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.card-coffee-price {
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    color: #1B1D1F;
+    background-color: #BEE3CC;
+
+    font-weight: 500;
+}
+
+.card-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-coffee-rating {
+    color: #1B1D1F;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.card-coffee-votes {
+    color: #6F757C;
+}
+
+.card-coffee-sold-out{
+    font-size: 16px;
+    font-weight: 600;
+    color: #ED735D;
+}

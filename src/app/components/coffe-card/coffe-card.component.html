@@ -1,0 +1,23 @@
+<div class="card">
+    <div class="card-image">
+        <img src={{coffee.image}} alt="Coffee image">
+        @if(coffee.popular){
+            <span class="card-popular-badge">Popular</span>
+        }
+    </div>
+    <div class="card-data-head">
+        <h3 class="card-coffe-name">{{coffee.name}}</h3>
+        <span class="card-coffee-price">{{coffee.price}}</span>
+    </div>
+    <div class="card-rating">
+        <div class="card-coffee-rating">
+            <span><img src="../../../assets/img/Star_fill.svg" alt="Star"></span>
+            <span class="card-coffee-rating-value">{{coffee.rating}}</span>
+            <span class="card-coffee-votes">({{coffee.votes}} votes)</span>   
+        </div>
+        @if (!coffee.available) {
+            <span class="card-coffee-sold-out">Sold out</span>
+        }
+    </div>
+
+</div>
