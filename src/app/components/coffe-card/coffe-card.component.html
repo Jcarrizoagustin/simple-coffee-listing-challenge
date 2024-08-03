@@ -11,9 +11,14 @@
     </div>
     <div class="card-rating">
         <div class="card-coffee-rating">
-            <span><img src="../../../assets/img/Star_fill.svg" alt="Star"></span>
-            <span class="card-coffee-rating-value">{{coffee.rating}}</span>
-            <span class="card-coffee-votes">({{coffee.votes}} votes)</span>   
+            @if(coffee.votes>0){
+                <span><img src="../../../assets/img/Star_fill.svg" alt="Star"></span>
+                <span class="card-coffee-rating-value">{{coffee.rating}}</span> 
+                <span class="card-coffee-votes">({{coffee.votes}} votes)</span>
+            }@else{
+                <span><img src="../../../assets/img/Star.svg" alt="Star"></span>
+                <span class="card-coffee-votes">No ratings</span>
+            }   
         </div>
         @if (!coffee.available) {
             <span class="card-coffee-sold-out">Sold out</span>
