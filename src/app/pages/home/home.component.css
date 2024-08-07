@@ -2,9 +2,12 @@
     width: 100%;
 
     position: relative;
+
+    padding-bottom: 50px;
 }
 
 .image-header-container {
+    width: 100%;
     height: 200px;
     overflow: hidden;
 }

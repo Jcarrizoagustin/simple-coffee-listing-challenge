@@ -35,7 +35,7 @@
 
 .buttons{
     margin: 0 auto;
-    width: 70%;
+    width: 300px;
     display: flex;
     justify-content: space-around;
 }
@@ -62,4 +62,38 @@
     align-items: center;
 
     gap: 40px;
+}
+
+@media screen and (min-width:768px){
+    .container {
+        width: 760px;
+        left: calc(50vw - 380px);
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    .description-text{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1280px){
+    .container {
+        width: 1200px;
+        left: calc(50vw - 600px);
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+    }
+
+    .description-text{
+        width: 50%;
+    }
 }
