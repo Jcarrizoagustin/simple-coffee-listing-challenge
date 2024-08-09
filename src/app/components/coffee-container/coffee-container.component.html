@@ -15,7 +15,11 @@
 
     <div class="product-list">
         @for (coffee of allProducts; track $index) {
-            <app-coffe-card [coffee]="coffee"></app-coffe-card>
+            @if (buttonSelectedIsAvailable() && coffee.available) {
+                <app-coffe-card [coffee]="coffee"></app-coffe-card>
+            }@else if (buttonSelectedIsAll()) {
+                <app-coffe-card [coffee]="coffee"></app-coffe-card>
+            }
         }
     </div>
 
