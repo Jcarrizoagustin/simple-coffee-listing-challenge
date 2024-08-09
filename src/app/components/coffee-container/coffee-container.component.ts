@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { GetProductsService } from '../../services/get-products.service';
 import { Coffee } from '../../model/coffee.interface';
 import { CoffeCardComponent } from '../coffe-card/coffe-card.component';
-import { tap } from 'rxjs';
 import { ActivatedButtonEnum } from '../../model/enums/activatedButton.enum';
 import { CommonModule } from '@angular/common';
 
