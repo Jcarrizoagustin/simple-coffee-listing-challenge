@@ -44,6 +44,6 @@ Para ejecutar este proyecto localmente, sigue los siguientes pasos:
 ## Capturas de pantalla
 
 ```markdown
-![Captura de pantalla - Celular](./assets/screenshots/Galaxy-A12-simple-coffee-challenge.netlify.app.png)
-![Captura de pantalla - Tablet](./assets/screenshots/iPad-PRO-11-simple-coffee-challenge.netlify.app.png)
-![Captura de pantalla - Notebook](./assets/screenshots/Macbook-Air-simple-coffee-challenge.netlify.app.png)
+![Captura de pantalla - Celular](./src/assets/screenshots/Galaxy-A12-simple-coffee-challenge.netlify.app.png)
+![Captura de pantalla - Tablet](./src/assets/screenshots/iPad-PRO-11-simple-coffee-challenge.netlify.app.png)
+![Captura de pantalla - Notebook](./src/assets/screenshots/Macbook-Air-simple-coffee-challenge.netlify.app.png)
