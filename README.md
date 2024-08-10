@@ -1,27 +1,48 @@
-# SimpleCoffeeListing
+# DevChallenges.io - Simple Coffee Listing
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+Este proyecto es una solución al Simple Coffee Listing de [devchallenges.io](https://devchallenges.io/challenge/simple-coffee-listing). El objetivo de este desafío es poner en práctica los conceptos básicos de frontend utilizando algún framework o libreria.
 
-## Development server
+## Índice
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Descripción](#descripción)
+- [Tecnologías utilizadas](#tecnologías-utilizadas)
+- [Instalación y configuración](#instalación-y-configuración)
+- [Capturas de pantalla](#capturas-de-pantalla)
 
-## Code scaffolding
+## Descripción
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Este desafio lo realice con el objetivo de familiarizarme con el framework partiendo desde un nivel básico.
 
-## Build
+Aprendí la nueva sintaxis de Angular 17 como @if @else y @for entre otras.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Tecnologías utilizadas
 
-## Running unit tests
+- **Angular 17**: Framework principal para la construcción de la aplicación.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instalación y configuración
 
-## Running end-to-end tests
+Para ejecutar este proyecto localmente, sigue los siguientes pasos:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clona este repositorio:
+    ```bash
+    git clone https://github.com/Jcarrizoagustin/simple-coffee-listing-challenge.git
+    ```
+2. Navega al directorio del proyecto:
+    ```bash
+    cd simple-coffee-listing
+    ```
+3. Instala las dependencias:
+    ```bash
+    npm install
+    ```
+4. Inicia la aplicación:
+    ```bash
+    npm start
+    ```
+5. Abre tu navegador y visita `http://localhost:4200` para ver la aplicación en funcionamiento.
 
-## Further help
+## Capturas de pantalla
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Captura de pantalla - Celular](./src/assets/screenshots/Galaxy-A12-simple-coffee-challenge.netlify.app.png)
+![Captura de pantalla - Tablet](./src/assets/screenshots/iPad-PRO-11-simple-coffee-challenge.netlify.app.png)
+![Captura de pantalla - Notebook](./src/assets/screenshots/Macbook-Air-simple-coffee-challenge.netlify.app.png)
