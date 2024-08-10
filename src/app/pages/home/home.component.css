@@ -4,10 +4,11 @@
     position: relative;
 
     padding-bottom: 50px;
+    
 }
 
 .image-header-container {
-    width: 100%;
+    width: 100vw;
     height: 200px;
     overflow: hidden;
 }

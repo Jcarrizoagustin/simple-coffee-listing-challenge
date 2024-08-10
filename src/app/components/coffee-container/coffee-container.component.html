@@ -5,17 +5,21 @@
         <p class="description-text">Introducing our Coffee Collection, a selection of unique coffees from different roast types and origins, expertly roasted in small batches and shipped fresh weekly.</p>
     </div>
     <div class="buttons">
-        <div class="button activate">
+        <div class="button" [ngClass]="{'activate':buttonSelectedIsAll()}" (click)="handleClickButtons('ALL')">
             All products
         </div>
-        <div class="button">
+        <div class="button" [ngClass]="{'activate':buttonSelectedIsAvailable()}" (click)="handleClickButtons('AVAILABLE')">
             Available now
         </div>
     </div>
 
     <div class="product-list">
-        @for (coffee of products; track $index) {
-            <app-coffe-card [coffee]="coffee"></app-coffe-card>
+        @for (coffee of allProducts; track $index) {
+            @if (buttonSelectedIsAvailable() && coffee.available) {
+                <app-coffe-card [coffee]="coffee"></app-coffe-card>
+            }@else if (buttonSelectedIsAll()) {
+                <app-coffe-card [coffee]="coffee"></app-coffe-card>
+            }
         }
     </div>
 
